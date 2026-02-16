@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRENSA U.I.S.A</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6d6c6c7b;
+    color: #eaeaea;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background: #000;
+    text-align: center;
+    padding: 30px 20px 22px 20px;
+    border-bottom: 1px solid #222;
+    position: relative;
+}
+
+/* BOTÓN VOLVER (desktop) */
+.volver {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+}
+
+.volver:hover {
+    background: #f4b400;
+    color: #000;
+    border-color: #f4b400;
+}
+
+.logo {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* ================= CONTENIDO ================= */
+
+.contenedor {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #141414;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #222;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(101, 121, 201, 0.705);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    filter: brightness(0.85);
+}
+
+.contenido {
+    padding: 25px;
+}
+
+.fecha {
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.contenido h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.contenido p {
+    font-size: 0.95rem;
+    color: #cfcfcf;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #f4b400;
+    border-color: #f4b400;
+    color: #000;
+}
+
+footer {
+    margin-top: 80px;
+    padding: 25px;
+    text-align: center;
+    background: #000;
+    border-top: 1px solid #222;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* ================= RESPONSIVE MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Botón ahora arriba alineado a la izquierda */
+    .volver {
+        position: static;
+        transform: none;
+        align-self: flex-start;
+        margin-bottom: 15px;
+        font-size: 0.85rem;
+        padding: 6px 14px;
+    }
+
+    /* Logo perfectamente centrado */
+    .logo {
+        width: 85px;
+        height: 85px;
+        margin-bottom: 12px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .contenedor {
+        margin: 40px auto;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <a href="https://uisainternacional.github.io/uisa/" class="volver">
+        ← Ir a la Página Principal
+    </a>
+
+    <img src="https://i.ibb.co/vCY5WjvK/Dise-o-sin-t-tulo-5.jpg" alt="Logo UISA" class="logo">
+    <h1>PRENSA U.I.S.A · Crónicas · Artículos · Boletín ·</h1>
+
+</header>
+
+<section class="contenedor">
+    <div class="galeria">
+
+
+
+         <div class="card">
+            <img src="https://i.ibb.co/mrL4w5Mz/Dise-o-sin-t-tulo-26.jpg" alt="Noticia">
+            <div class="contenido">
+                <div class="fecha">7 de Febrero de 2026</div>
+                <h3>Epstein y el altar del poder: cuando la élite devora a pedido de sus propios dioses</h3>
+                <p>según los archivos liberados del caso epstein. en estas grandes "fiestas de total impunidad" se hayaban políticos, banqueros, intelectuales y figuras del poder global...</p>
+                <a href="https://uisainternacional.github.io/PRENSA-U.I.S.A-4/" class="btn">Leer más</a>
+            </div>
+        </div>
+
+
+
+ <div class="card">
+            <img src="https://i.ibb.co/7dVGznSj/ODIO-2.jpg" alt="Noticia">
+            <div class="contenido">
+                <div class="fecha">4 de Octubre de 2025</div>
+                <h3>💧 El Mensaje del Agua: la sorprendente teoría del científico japonés que afirmó que las emociones pueden cambiar la materia</h3>
+                <p>el agua puede registrar y responder a las vibraciones emocionales y mentales. Es decir, los pensamientos, las palabras, la música y las intenciones humanas influirían...</p>
+                <a href="https://uisainternacional.github.io/PRENSA-U.I.S.A-3/" class="btn">Leer más</a>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card">
+            <img src="https://i.ibb.co/KcX776BH/Dise-o-sin-t-tulo-1.png" alt="Noticia">
+            <div class="contenido">
+                <div class="fecha"> 13 de Septiembre de 2025</div>
+                <h3>🌱 La ciencia y la espiritualidad confirman: las plantas responden a nuestras palabras, música y energía”</h3>
+                <p>La ciencia moderna comienza a confirmar que palabras, sonidos y vibraciones influyen de manera directa en su crecimiento, vitalidad...</p>
+                <a href="https://uisainternacional.github.io/PRENSA-U.I.S.A-2/" class="btn">Leer más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ibb.co/hJdhLXCd/uisa-111.jpg" alt="Noticia">
+            <div class="contenido">
+                <div class="fecha">4 de agosto de 2025</div>
+                <h3>🛑 Alerta espiritual: el peligro oculto detrás de algunas “escuelas de autoconocimiento”</h3>
+                <p>una preocupante proliferación de grupos que, bajo la apariencia de ofrecer desarrollo espiritual o formación holística, operan con estructuras propias de sectas coercitivas...</p>
+                <a href="https://uisainternacional.github.io/PRENSA-U.I.S.A-1/" class="btn">Leer más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ibb.co/N2RktVH9/Dise-o-sin-t-tulo-15.jpg" alt="Noticia">
+            <div class="contenido">
+                <div class="fecha">02 Agosto 2025</div>
+                <h3>LA MEDICINA ALTERNATIVA COMPLEMENTARIA BAJO LA LUPA CIENTÍFICA INTERNACIONAL.</h3>
+                <p> la OMS ha inaugurado un Centro Mundial de Medicina Tradicional en la ciudad de...</p>
+                <a href="https://uisainternacional.github.io/PRENSA-U.I.S.A/" class="btn">Leer más</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+© 2026 PRENSA Unidad Internacional del Saber y Asociados U.I.S.A | Publicación Oficial
+</footer>
+
+</body>
+</html>
